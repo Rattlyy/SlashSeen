@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+
+    maven { url = "https://repo.papermc.io/repository/maven-public/" }
+    maven { url = "https://jitpack.io" }
+}
+
+dependencies {
+    compileOnly("io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT")
+    compileOnly("com.github.TownyAdvanced:towny:0.98.2.0")
+}
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}

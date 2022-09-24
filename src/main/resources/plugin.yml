@@ -1,0 +1,5 @@
+name: SlashSeen
+version: 1.0
+main: "it.rattly.slashseen.Main"
+commands:
+  seen:
